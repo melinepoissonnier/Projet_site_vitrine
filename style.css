@@ -1,3 +1,21 @@
+/*Couleur arrière plan */
 body{
     background : #E8D6CA;
+}
+
+footer{
+
+    background: #f1efe7  ; 
+}
+
+h2 , h3 {
+
+    color: #6d071a;
+    font-family: 'dancingscript';
+}
+
+html {
+
+    font:"Quicksand" sans-serif; 
+    
 }
