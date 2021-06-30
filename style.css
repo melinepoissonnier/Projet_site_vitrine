@@ -34,15 +34,15 @@ html {
     display: grid;
     height: 15%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "ne  logo   nl"        
-        "ne   .   cont"
-        "ne   .   adr"
+        "nous_ecrire  logo   newsletter"        
+        "nous_ecrire   .   cont"
+        "nous_ecrire   .   adr"
     }
 
-#nous_ecrire{
-    grid-area: ne;
+.nous_ecrire{
+    grid-area: nous_ecrire;
     text-align: start;
 }
 
@@ -50,7 +50,7 @@ html {
     grid-area: logo;
 }
 #newsletter{
-    grid-area: nl;
+    grid-area: newsletter;
 }
 
 #adress_horaires{
