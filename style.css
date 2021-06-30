@@ -1,21 +1,101 @@
 /*Couleur arrière plan */
-body{
-    background : #E8D6CA;
+body {
+    background: #E8D6CA;
 }
 
-footer{
+footer {
 
-    background: #f1efe7  ; 
+    background: #f1efe7;
 }
 
-h2 , h3 {
+h2,
+h3 {
 
     color: #6d071a;
-    font-family: "Dancing script", Verdana, Geneva, Arial;
+    font-family: 'Dancing Script', cursive;
 }
 
-html {
+html, #button_plus{
 
-    font-family: "Quicksand", Verdana, Geneva, Arial;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* main */
+
+/* création grid template */
+#container {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 47% 6% 47%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin:20%;
+    grid-template-areas:
+        "Pres . NosBouquets"
+        "Pres . Mariage"
+        "Creer . Anniv"
+        "Creer . Occasions"
+}
+
+/* répartition éléments dans la grid */
+#presentation {
+    grid-area: Pres;
+    text-align: justify;
+    position:relative;
+    font-size:25px;
+}
+
+#creation {
+    grid-area: Creer;
+    position:relative;
+    font-size:25px;
+    text-align: justify;
+}
+
+#nos_bouquets {
+    grid-area: NosBouquets;
+}
+
+#mariage {
+    grid-area: Mariage;
+}
+
+#anniversaire {
+    grid-area: Anniv;
+}
+
+#occasions {
+    grid-area: Occasions;
+}
+
+/* taille images */
+.image {
+    width: 400px;
+    object-fit: cover;
+}
+
+/* Mise en forme bouton */
+button{
+    position:absolute;
+    right:0px;
     
 }
+
+/* Mise en forme figures */
+figure{
+    position:relative;
+    margin-inline: 0px;
+    margin-top: 0px;;
+    }
+
+figcaption{
+    position:absolute;
+    font-family: 'Dancing Script', cursive;
+    top:0px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size:50px;
+}
+  
+
