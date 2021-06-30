@@ -11,11 +11,11 @@ footer{
 h2 , h3 {
 
     color: #6d071a;
-    font-family: 'dancingscript';
+    font-family: "Dancing script", Verdana, Geneva, Arial;
 }
 
 html {
 
-    font:"Quicksand" sans-serif; 
+    font-family: "Quicksand", Verdana, Geneva, Arial;
     
 }
