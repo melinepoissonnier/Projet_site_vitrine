@@ -8,33 +8,53 @@
     <title>Fête ton bouquet</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>Header</header>
 
     <main>
-        <slider>Slider</slider>
-        <section id="container">
+        <div class="wrapper">
+            <input type="radio" name="image-slide" checked="checked">
+            <picture aria-label="Joyeux 14 juillet !">
+                <img src="images/bouquet_1.jpg" alt="Bouquet de fleur">
+            </picture>
+            
+            <input type="radio" name="image-slide">
+            <picture aria-label="Exprimez-vous avec des fleurs">
+                <img src="images/bouquet_2.jpg" alt="">
+            </picture>
+        
+            <input type="radio" name="image-slide">
+            <picture aria-label="Bouquet 2">
+                    <img src="images/bouquet_3.jpg" alt="">
+            </picture>
+            
+            <input type="radio" name="image-slide">
+            <picture>
+                <img src="images/bouquet_4.jpg" alt="">
+            </picture>
+        </div>
+<section id="colonnes">
+        <section id="colonne_1">
+
             <section id="presentation">
-                <p> Bienvenue dans <span>Fête ton bouquet</span> - la meilleure boutique de fleurs dans toute la France! Avec nous vous allez pouvoir démontrer toute votre créativité et dire à vos proches tout que vous voulez avec des fleurs.</p>
-                <button id="button_plus">En savoir plus...</button>
+                <p> Bienvenue dans <span> <strong>Fête ton bouquet</strong></span> - la meilleure boutique de fleurs de toute la France ! Avec nous, vous allez pouvoir démontrer toute votre créativité et dire à vos proches tout que vous voulez avec des fleurs.</p>
+                <button>En savoir plus...</button>
             </section>
+
+            <h2 id="creer_son_bouquet">Créer son bouquet</h2>
 
             <section id="creation">
-                <strong>
-                    <h2>Créer son bouquet</h2>
-                </strong>
-                <p> Vous n'êtes pas sûres que nos propositions peuvent réfléchir les émotions que vous voulez donner? Découvrez l'art de fleurs et réalisez son rêve grâce à notre service "Créer son bouquet".</p>
-                <button id="button_plus">Essayer</button>
+                <p> Vous n'êtes pas sûr que nos propositions peuvent réfléchir les émotions que vous voulez donner? Découvrez l'art de fleurs et réalisez son rêve grâce à notre service "Créer son bouquet".</p>
+                <button>Essayer</button>
             </section>
-
-            <strong>
-                <h2 id="nos_bouquets">Nos bouquets</h2>
-            </strong>
+        </section>
+        <section id="colonne_2">
+            <h2 id="nos_bouquets">Nos bouquets</h2>
 
             <figure id="mariage">
                 <img src="images/mariage.jpg" alt="bouquet de fleurs idéal pour un mariage" class="image">
@@ -51,6 +71,7 @@
                 <figcaption>Pour toutes les occasions</figcaption>
             </figure>
         </section>
+    </section>
 
     </main>
 
@@ -127,5 +148,6 @@
 
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/1ece3a9142.js" crossorigin="anonymous"></script>
 
 </html>
