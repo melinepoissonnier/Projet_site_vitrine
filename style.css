@@ -62,7 +62,7 @@ html, #button_plus{
 }
 
 #nos_bouquets{
-    margin-bottom:0;
+    margin-bottom:-5%;
 }
 
 #mariage, #anniversaire, #occasions{
@@ -109,8 +109,6 @@ figcaption{
 h2 {
     font-size:50px;
 }
-  
-/* */
 
 img{
     width:100%; 
@@ -119,12 +117,12 @@ img{
 .wrapper {
 	position: relative;
 	width: 100%;
-	height:660px;
+	height: 650px;
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	padding-bottom: 1%;;
+	padding-bottom: 1%;
 }
 
 input {
@@ -136,6 +134,7 @@ input {
 	background: beige;
 	border-radius: 50%;
 	cursor: pointer;
+    align-self:flex-end;
 }
 
 input:last-of-type {
@@ -156,7 +155,7 @@ input + * {
 	top: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;
+	height:100%;
 	transform: translateX(100%);
 	transition: transform ease-in-out 400ms;
 	border-radius: 5px;
@@ -226,10 +225,55 @@ input:after {
 	transform: translate(-25%, -50%) rotate(45deg);
 }
 
-@media screen and (max-width:750px) {
-    
+
+
+
+@media screen and (max-width:1400px) {
+
 #colonnes{
     display:block;
 }
+    input + * {
+        height: 60%;
+    }
+figure{
+    margin-bottom:3%;
+}
+    #nos_bouquets{
+        margin-bottom:10%;
+    }
+}
+@media screen and (max-width:1000px) {
+    input + * {
+        height: 60%;
+    }
+    .wrapper{
+        padding-bottom: 1%;
+    }
+}
+@media screen and (max-width:800px) {
+    input + * {
+        height: 45%;
+    }
+    .wrapper{
+        padding-bottom: 20%;
+    }
+}
 
+@media screen and (max-width:532px) {
+    input + * {
+        height: 40%;
+    }
+    h2{
+        font-size:30px;
+    }
+    #presentation, #creation{
+        font-size: 16px;
+    }
+    figcaption{
+        font-size:20px;
+    }
+    .wrapper{
+        padding-bottom: 20%;
+    }
 }
