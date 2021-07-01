@@ -45,6 +45,10 @@ html {
     grid-area: nous_ecrire;
     text-align: start;
 }
+input {
+    width: 90%;
+ }
+
 
 .cont_footer > img{
     grid-area: logo;
@@ -54,6 +58,11 @@ html {
     grid-area: newsletter;
 }
 
+#newsletter > input{
+    width: 60%;
+    margin: 7%;
+}
+
 #adress_horaires{
     grid-area: adr;
 }
@@ -61,6 +70,15 @@ html {
 #contacts{
     grid-area: cont;
 }
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons > i{
+    padding: 5%;
+    }
 
 .bottom{
     display: flex;
@@ -76,4 +94,44 @@ html {
     background-color: #E8D6CA;
     padding-top: 0.5%;
 }
+}
+
+@media screen and (max-width: 650px) {
+    .cont_footer, .bottom > div{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    height: 15%;
+    margin: 1%;
+    }
+
+    input, textarea{
+        width: 50%;
+        align-self: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .cont_footer > img{
+        width: 95%;
+    }
+
+    .icons, .cards{
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+    }
+    
+    i{
+        padding-left: 2%;
+        padding-right: 2%;
+        size: 150%;
+        }
+        #copyright{
+            text-align: center;
+            font-size: x-small;
+            background-color: #E8D6CA;
+            padding-top: 0.5%;
+        }
 }
