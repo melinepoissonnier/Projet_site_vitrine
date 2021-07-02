@@ -45,7 +45,7 @@ html {
     grid-area: nous_ecrire;
     text-align: start;
 }
-input {
+.input_footer {
     width: 90%;
  }
 
