@@ -37,7 +37,7 @@ img{
     width: 40%;
 }
 
-#accueil, #actuels, #produits, #contacts, #panier{
+#accueil, #actuels, #produits, #contacts, #livraison, #panier{
     background-color: #f1efe7 ;
     border: #6d071a solid 1px;
     padding: 1%;
@@ -49,7 +49,7 @@ img{
     background-color: #f1efe7 ;
     border: #6d071a solid 1px;
     padding: 1%;
-    height: 20%;
+    height: 10%;
 }
 
 #menuburger, #bonhomme, #phone {
@@ -61,7 +61,7 @@ img{
 }
 
 #sidentifier{
-    min-width: 15%;
+    min-width: 10%;
 }
 
 
