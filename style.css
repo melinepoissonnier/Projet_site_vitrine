@@ -13,12 +13,22 @@ h2 , h3 {
     font-family: "Dancing script", Verdana, Geneva, Arial;
     font-size: 40px;
 }
+span{
+    color: #6d071a;
+    font-family: "Dancing script", Verdana, Geneva, Arial;
+    font-size: 23px;
+}
+
+#container_images{
+    margin-top:-20%;
+}
 
 html, #button_plus{
     font-family: 'Quicksand', sans-serif;
 }
 
 /* main */
+
 #colonnes{
     display: flex;
     padding:1%;
@@ -26,6 +36,7 @@ html, #button_plus{
     justify-content: space-between;
     flex-wrap:wrap;
     flex-direction: row;
+    right:10%;
 }
 
 #colonne_1{
@@ -53,7 +64,6 @@ html, #button_plus{
 }
 
 #creation{
-    grid-area: Par;
     text-align: justify;
     position:relative;
     font-size:20px;
@@ -61,10 +71,7 @@ html, #button_plus{
     padding:15px;
 }
 
-#nos_bouquets{
-    margin-bottom:-2.5%;
-    margin-top: -5%;
-}
+
 
 #mariage, #anniversaire, #occasions{
     position:relative;
@@ -72,9 +79,10 @@ html, #button_plus{
     justify-content: center;
 }
 
+ 
 /* taille images propositions*/
 .image {
-    width: 85%;
+    width: 70%;
     height: 100%;
 } 
 
@@ -90,7 +98,7 @@ button{
 figure{
     position:relative;
     margin-inline: 0px;
-    margin-top: 0px;
+    margin-top: 5%;
     margin-bottom: 0px;;
     }
 
@@ -98,7 +106,7 @@ figcaption{
     position:absolute;
     font-family: 'Dancing Script', cursive;
     bottom:10px;
-    width:85%;
+    width:70%;
     text-align:center;
     font-size: 30px;
     color:#707070;
@@ -246,6 +254,16 @@ section {
         font-size:20px;
     }
 
+    #colonnes{
+        display: block;
+    }
+    #colonne_2{
+        margin-top: 5%;
+    }
+    
+    .image{
+        margin-top:5%;
+    }
 
     .cont_header{
         display: flex;
@@ -321,11 +339,30 @@ section {
         }
 }
 /*MEDIA QUERY TABLETTE*/
-@media only screen and (min-width: 650px) and (max-width: 1280px){
+@media only screen and (min-width: 650px) and (max-width: 1200px){
     .wrapper {
         height: 450px;
     }
 
+    #colonne_2{
+        margin-top: 5%;
+    }
+    
+    .image{
+        margin-top:5%;
+    }
+
+    #nos_bouquets{
+        margin-top:-2%;
+    }
+
+    #container_images{
+        display: flex;
+        flex-direction: row;
+    }
+figcaption{
+    font-size: 20px;
+}
     
 .img_banner{
     width: 100%;
@@ -345,6 +382,8 @@ section {
     #colonnes{
         display: block;
     }
+
+
     
     #accueil, #actuels, #produits, #contacts, #livraison, #panier{
         background-color: #f1efe7 ;
@@ -450,7 +489,7 @@ section {
 
 
 /*MEDIA QUERY ORDINATEUR*/
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1200px){
     .wrapper {
         height: 750px;
     }
