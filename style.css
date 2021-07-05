@@ -197,42 +197,10 @@ section {
     z-index: 1;
 }
 
-/* 
-    just to be safe we hide every element that comes after
-    each slide and that's not an input of type radio
-*/
+
 .input_main+*+*:not(.input_main[type=radio]) {
     display: none;
 }
-
-/* ARROWS */
-
-.input_main:before {
-    display: none !important;
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background: orange;
-    border-radius: 50%;
-}
-
-.input_main:after {
-    display: none !important;
-    content: '';
-    position: absolute;
-    top: calc(50% + 1rem);
-    left: 2rem;
-    width: .5rem;
-    height: .5rem;
-    border-bottom: 1px solid #262626;
-    border-left: 1px solid #262626;
-    transform: translate(-25%, -50%) rotate(45deg);
-}
-
-
 
 
 /*MEDIA QUERY SMARTPHONE*/
