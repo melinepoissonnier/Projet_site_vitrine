@@ -108,6 +108,7 @@ figure {
     margin-top: 5%;
     margin-bottom: 0px;
     ;
+   
 }
 
 figcaption {
@@ -368,7 +369,7 @@ section {
 }
 
 /*MEDIA QUERY TABLETTE*/
-@media only screen and (min-width: 650px) and (max-width: 1200px) {
+@media only screen and (min-width: 650px) and (max-width: 1100px) {
     /*HEADER*/
     .cont_header {
         display: flex;
@@ -382,7 +383,12 @@ section {
     }
 
     #colonnes {
+        
         display: block;
+    }
+
+    figure{
+        margin-top: 20%;
     }
 
     #accueil,
@@ -526,7 +532,7 @@ section {
 
 
 /*MEDIA QUERY ORDINATEUR*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
     .wrapper {
         height: 750px;
     }
@@ -537,7 +543,7 @@ section {
     }
 
       /*HEADER*/
-      .cont_header {
+    .cont_header {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -548,9 +554,6 @@ section {
         width: 34%;
     }
 
-    #colonnes {
-        display: block;
-    }
 
     #accueil,
     #actuels,
