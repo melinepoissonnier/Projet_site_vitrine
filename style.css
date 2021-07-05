@@ -148,13 +148,6 @@ figcaption {
 
 }
 
-
-
-
-/* .input_main:last-of-type {
-    margin: 0;
-} */
-
 .input_main:focus {
     outline: none;
 }
@@ -257,6 +250,8 @@ section {
         min-width: 80%;
     }
 
+
+    #livraison,
     #accueil,
     #actuels,
     #produits,
@@ -281,6 +276,7 @@ section {
     /* MAIN */
     .img_banner {
         height: inherit;
+        width: 100%;
     }
 
     .wrapper {
@@ -585,4 +581,74 @@ section {
     #phone {
         display: none;
     }
+
+    .cont_footer {
+        display: grid;
+        height: 15%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "nous_ecrire  logo   newsletter"
+            "nous_ecrire  logo   cont"
+            "nous_ecrire   .   adr";
+        align-content: space-around;
+        text-align: center;
+        margin: 1%;
+    }
+
+    .nous_ecrire {
+        grid-area: nous_ecrire;
+        text-align: start;
+    }
+
+    .cont_footer>input {
+        width: 90%;
+    }
+
+    .cont_footer>img {
+        grid-area: logo;
+        width: 100%;
+    }
+
+    #newsletter {
+        grid-area: newsletter;
+    }
+
+    #newsletter>input {
+        width: 60%;
+        margin: 7%;
+    }
+
+    #adress_horaires {
+        grid-area: adr;
+    }
+
+    #cont {
+        grid-area: cont;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons>i {
+        padding: 5%;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: small;
+    }
+
+    #copyright {
+        text-align: center;
+        font-size: x-small;
+        background-color: #E8D6CA;
+        padding-top: 0.5%;
+    }
+
 }
