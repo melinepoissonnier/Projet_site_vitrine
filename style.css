@@ -1,56 +1,59 @@
 /*Couleur arrière plan */
-body{
-    background : #E8D6CA;
+body {
+    background: #E8D6CA;
     margin: auto;
 }
 
-h2 , h3 {
+h2,
+h3 {
     color: #6d071a;
     font-family: "Dancing script", Verdana, Geneva, Arial;
     font-size: 40px;
 }
-span{
+
+span {
     color: #6d071a;
     font-family: "Dancing script", Verdana, Geneva, Arial;
     font-size: 23px;
 }
 
-#container_images{
-    margin-top:-20%;
+#container_images {
+    margin-top: -20%;
 }
 
-html, #button_plus{
+html,
+#button_plus {
     font-family: 'Quicksand', sans-serif;
 }
 
 
-footer{
-    background: #f1efe7; 
+footer {
+    background: #f1efe7;
 }
 
 /* main */
 
-#colonnes{
+#colonnes {
     display: flex;
-    padding:1%;
-    padding-top:5%;
+    padding: 1%;
+    padding-top: 5%;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    right:10%;
+    right: 10%;
 }
 
-#colonne_1{
-    flex:1;
-    display:flex;
+#colonne_1 {
+    flex: 1;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* height: 50%; */
 }
 
-#colonne_2{
-    flex:2;
-    display:flex;
+#colonne_2 {
+    flex: 2;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* height: 50%; */
@@ -58,59 +61,63 @@ footer{
 
 #presentation {
     text-align: justify;
-    position:relative;
-    font-size:20px;
+    position: relative;
+    font-size: 20px;
     background-color: white;
-    padding:15px;
+    padding: 15px;
 }
 
-#creation{
+#creation {
     text-align: justify;
-    position:relative;
-    font-size:20px;
+    position: relative;
+    font-size: 20px;
     background-color: white;
-    padding:15px;
+    padding: 15px;
 }
 
 
 
-#mariage, #anniversaire, #occasions{
-    position:relative;
-    display:flex;
+#mariage,
+#anniversaire,
+#occasions {
+    position: relative;
+    display: flex;
     justify-content: center;
 }
 
- 
+
 /* taille images propositions*/
 .image {
     width: 70%;
     height: 100%;
-} 
+}
 
 /* Mise en forme bouton */
-button{
-    position:absolute;
-    right:3%;
-    bottom:2%;
+button {
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
     font-size: 15px;
-    border:none;
+    border: none;
 }
+
 /* Mise en forme figures */
-figure{
-    position:relative;
+figure {
+    position: relative;
     margin-inline: 0px;
     margin-top: 5%;
-    margin-bottom: 0px;;
-    }
+    margin-bottom: 0px;
+    ;
+}
 
-figcaption{
-    position:absolute;
+figcaption {
+    position: absolute;
     font-family: 'Dancing Script', cursive;
-    bottom:10px;
-    width:70%;
-    text-align:center;
+    bottom: 10px;
+    width: 70%;
+    text-align: center;
     font-size: 30px;
-    color:#707070;
+    color: #707070;
     background-color: white;
 
 }
@@ -155,13 +162,13 @@ figcaption{
     background: rgb(228, 84, 84);
 }
 
-.input_main + * {
+.input_main+* {
     position: absolute;
     display: block;
     top: 0;
     right: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     transform: translateX(100%);
     transition: transform ease-in-out 400ms;
     border-radius: 5px;
@@ -169,18 +176,18 @@ figcaption{
     background: #ddd;
 }
 
-.input_main + *[aria-label]:before {
+.input_main+*[aria-label]:before {
     content: attr(aria-label);
-    position:absolute;
+    position: absolute;
     font-family: 'Dancing Script', cursive;
-    bottom:50px;
-    width:100%;
-    text-align:center;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
     font-size: 30px;
     color: black;
     z-index: 1;
     padding: .5rem;
-    background-color:beige;
+    background-color: beige;
 }
 
 section {
@@ -191,7 +198,7 @@ section {
     justify-content: center;
 }
 
-.input_main:checked + * {
+.input_main:checked+* {
     transform: translateX(0);
     z-index: 1;
 }
@@ -200,9 +207,10 @@ section {
     just to be safe we hide every element that comes after
     each slide and that's not an input of type radio
 */
-.input_main + * + *:not(.input_main[type=radio]) {
+.input_main+*+*:not(.input_main[type=radio]) {
     display: none;
 }
+
 /* ARROWS */
 
 .input_main:before {
@@ -236,65 +244,77 @@ section {
 /*MEDIA QUERY SMARTPHONE*/
 
 @media only screen and (max-width: 650px) {
-    
-    .img_banner{
-    height: inherit;
-    }
-
-    .wrapper {
-        height: 350px;
-    }
-    
-    h2{
-        font-size:30px;
-    }
-    #presentation, #creation{
-        font-size: 16px;
-    }
-    figcaption{
-        font-size:20px;
-    }
-
-    #colonnes{
-        display: block;
-    }
-    #colonne_2{
-        margin-top: 5%;
-    }
-    
-    .image{
-        margin-top:5%;
-    }
-
-    .cont_header{
+/* HEADER */
+    .cont_header {
         display: flex;
         flex-direction: row;
         max-width: 100%;
         text-align: center;
     }
-    
 
-    .img_header{
+    .img_header {
         min-width: 80%;
     }
 
-    #accueil, #actuels, #produits, #contacts, #sidentifier{
+    #accueil,
+    #actuels,
+    #produits,
+    #contacts,
+    #sidentifier {
         background-color: #f1efe7;
         border: #6d071a solid 1px;
         display: none;
     }
 
-    #menuburger, #bonhomme, #phone, #panier  {
-        background-color: #f1efe7 ;
+    #menuburger,
+    #bonhomme,
+    #phone,
+    #panier {
+        background-color: #f1efe7;
         border: #6d071a solid 1px;
         padding: 1%;
         height: 20%;
         max-width: 3%;
     }
 
-/*FOOTER*/
+    /* MAIN */
+    .img_banner {
+        height: inherit;
+    }
 
-    .cont_footer, .bottom > div{
+    .wrapper {
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    #presentation,
+    #creation {
+        font-size: 16px;
+    }
+
+    figcaption {
+        font-size: 20px;
+    }
+
+    #colonnes {
+        display: block;
+    }
+
+    #colonne_2 {
+        margin-top: 5%;
+    }
+
+    .image {
+        margin-top: 15%;
+    }
+    /*FOOTER*/
+
+    .cont_footer,
+    .bottom>div {
         display: flex;
         justify-content: center;
         flex-flow: column;
@@ -303,133 +323,143 @@ section {
         margin: 1%;
     }
 
-    .cont_footer > input , textarea{
+    .cont_footer>input,
+    textarea {
         align-self: center;
         margin-top: 2%;
     }
 
-    .cont_footer > img{
+    .cont_footer>img {
         width: 95%;
     }
 
-    .icons, .cards{
+    .icons,
+    .cards {
         display: flex;
         justify-content: center;
         flex-flow: row;
     }
-    
-    .icons > i{
+
+    .icons>i {
         padding-left: 2%;
         padding-right: 2%;
         size: 150%;
-        }
-        #copyright{
-            text-align: center;
-            font-size: x-small;
-            background-color: #E8D6CA;
-            padding-top: 0.5%;
-        }
+    }
 
-        h2{
-            font-size:30px;
-        }
-        #presentation, #creation{
-            font-size: 16px;
-        }
-        figcaption{
-            font-size:20px;
-        }
+    #copyright {
+        text-align: center;
+        font-size: x-small;
+        background-color: #E8D6CA;
+        padding-top: 0.5%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #presentation,
+    #creation {
+        font-size: 16px;
+    }
+
+    figcaption {
+        font-size: 20px;
+    }
 }
+
 /*MEDIA QUERY TABLETTE*/
-@media only screen and (min-width: 650px) and (max-width: 1200px){
-    .wrapper {
-        height: 450px;
-    }
-
-    #colonne_2{
-        margin-top: 5%;
-    }
-    
-    .image{
-        margin-top:5%;
-    }
-
-    #nos_bouquets{
-        margin-top:-2%;
-    }
-
-    #container_images{
-        display: flex;
-        flex-direction: row;
-    }
-figcaption{
-    font-size: 20px;
-}
-    
+@media only screen and (min-width: 650px) and (max-width: 1200px) {
     /*HEADER*/
-
-    .cont_header{
+    .cont_header {
         display: flex;
         flex-direction: row;
         width: 100%;
         text-align: center;
-        }
+    }
 
-    .img_header{
+    .img_header {
         width: 34%;
     }
-    #colonnes{
+
+    #colonnes {
         display: block;
     }
 
-
-    
-    #accueil, #actuels, #produits, #contacts, #livraison, #panier{
-        background-color: #f1efe7 ;
+    #accueil,
+    #actuels,
+    #produits,
+    #contacts,
+    #livraison,
+    #panier {
+        background-color: #f1efe7;
         border: #6d071a solid 1px;
         padding: 1%;
         height: 20%;
         width: 11%;
-        }
+    }
 
-    #sidentifier{
-        background-color: #f1efe7 ;
+    #sidentifier {
+        background-color: #f1efe7;
         border: #6d071a solid 1px;
         padding: 1%;
         height: 10%;
-        max-width: 3%;        
-        }
-        
-    #panier{
+        max-width: 3%;
+    }
+
+    #panier {
         max-width: 2%;
-        }
-    
-    #menuburger, #bonhomme, #phone{        
+    }
+
+    #menuburger,
+    #bonhomme,
+    #phone {
         display: none;
-        }
+    }
 
     /*MAIN*/
-
     .wrapper {
         height: 450px;
-        }
-    
-    .img_banner{
-        width: 100%;
-        }
+    }
 
-    #colonnes{
+      .img_banner {
+        width: 100%;
+    }
+
+    #colonne_2 {
+        margin-top: 5%;
+    }
+
+    .image {
+        margin-top: 5%;
+    }
+
+    #nos_bouquets {
+        margin-top: -2%;
+    }
+
+    #container_images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    figcaption {
+        font-size: 20px;
+    }
+
+  
+
+    #colonnes {
         display: block;
-        }
-    
-/* FOOTER */
-    .cont_footer{
+    }
+
+    /* FOOTER */
+    .cont_footer {
         display: grid;
         height: 15%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-            "nous_ecrire  logo   newsletter"        
+            "nous_ecrire  logo   newsletter"
             "nous_ecrire  logo   cont"
             "nous_ecrire   .   adr";
         align-content: space-around;
@@ -437,47 +467,47 @@ figcaption{
         margin: 1%;
     }
 
-    .nous_ecrire{
+    .nous_ecrire {
         grid-area: nous_ecrire;
         text-align: start;
     }
 
-    .cont_footer > input {
+    .cont_footer>input {
         width: 90%;
     }
 
-    .cont_footer > img{
+    .cont_footer>img {
         grid-area: logo;
         width: 100%;
     }
 
-    #newsletter{
+    #newsletter {
         grid-area: newsletter;
     }
 
-    #newsletter > input{
+    #newsletter>input {
         width: 60%;
         margin: 7%;
     }
 
-    #adress_horaires{
+    #adress_horaires {
         grid-area: adr;
     }
 
-    #cont{
+    #cont {
         grid-area: cont;
     }
 
-    .icons{
+    .icons {
         display: flex;
         justify-content: center;
     }
 
-    .icons > i{
+    .icons>i {
         padding: 5%;
     }
 
-    .bottom{
+    .bottom {
         display: flex;
         justify-content: space-between;
         margin-left: 1%;
@@ -485,7 +515,7 @@ figcaption{
         font-size: small;
     }
 
-    #copyright{
+    #copyright {
         text-align: center;
         font-size: x-small;
         background-color: #E8D6CA;
@@ -496,13 +526,60 @@ figcaption{
 
 
 /*MEDIA QUERY ORDINATEUR*/
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
     .wrapper {
         height: 750px;
     }
 
-    .img_banner{
+    .img_banner {
         width: 100%;
-        height: auto; 
+        height: auto;
+    }
+
+      /*HEADER*/
+      .cont_header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+    }
+
+    .img_header {
+        width: 34%;
+    }
+
+    #colonnes {
+        display: block;
+    }
+
+    #accueil,
+    #actuels,
+    #produits,
+    #contacts,
+    #livraison,
+    #panier {
+        background-color: #f1efe7;
+        border: #6d071a solid 1px;
+        padding: 1%;
+        height: 20%;
+        width: 11%;
+    }
+
+    #sidentifier {
+        background-color: #f1efe7;
+        border: #6d071a solid 1px;
+        padding: 1%;
+        height: 10%;
+        max-width: 3%;
+    }
+
+    #panier {
+        max-width: 2%;
+    }
+
+    #menuburger,
+    #bonhomme,
+    #phone {
+        display: none;
     }
 }
