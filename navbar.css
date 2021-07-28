@@ -1,0 +1,47 @@
+.nav-link {
+    background: #f1efe7;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+.navbartabpadding {
+    padding: 1em 4em !important;
+}
+.navbariconpadding {
+    padding: 1em !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.border {
+    border-color: #6d071a !important;
+}
+.responsiveicons {
+    display: none !important;
+   
+    background-color: #f1efe7;
+}
+.responsiveicons > * {
+    padding: 1em;
+    border: 1px solid #6d071a;
+}
+
+@media screen and (max-width: 992px) {
+    .navbariconpadding {
+        display: none;
+    }
+    .nav-link {
+        border-right: 1px solid #6d071a !important;
+    }
+    .navbartabpadding {
+        border-bottom: none !important;
+    }
+    #livraisontab {
+        border-bottom: 1px solid #6d071a !important;
+    }
+    .responsiveicons {
+        display: flex !important;
+    }
+}
