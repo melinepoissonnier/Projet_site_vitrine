@@ -1,0 +1,17 @@
+/*Couleur arrière plan */
+body {
+  background: #e8d6ca;
+  margin: auto;
+}
+.articl {
+  -webkit-box-shadow: 2px 3px 20px -2px #000000;
+  box-shadow: 2px 3px 20px -2px #000000;
+}
+.col {
+  transition: 0.5s ease-in-out;
+}
+.col:hover {
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
