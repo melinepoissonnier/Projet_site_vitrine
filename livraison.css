@@ -1,0 +1,51 @@
+/*Couleur arrière plan */
+body {
+    background: #E8D6CA;
+    margin: auto;
+}
+
+#row_livraison {
+
+    justify-content: center;
+
+}
+
+#picto_livraison {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #6d071a;
+    text-align: center;
+}
+
+#img_livraison {
+    width:8rem;
+    margin-bottom: 0.5rem;
+}
+
+.cont_footer,
+    .bottom>div {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+        height: 15%;
+        margin: 1%;
+    }
+
+    
+
+
+    #copyright {
+        text-align: center;
+        font-size: x-small;
+        background-color: #E8D6CA;
+        padding-top: 0.5%;
+    }
+
+    #ment_leg {
+
+        font-family: 'Quicksand', sans-serif;
+        font-size: small;
+
+
+    }
