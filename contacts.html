@@ -46,22 +46,31 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav justify-content-between">
               <img id="logobar" src="images/Logo.png" alt="" />
-              <a class="navbartabpadding nav-link border border-end-0" href="./index.html"
+
+              <a
+                class="navbartabpadding nav-link border border-end-0"
+                href="index.html"
                 >Accueil</a
               >
-              <a class="navbartabpadding nav-link border border-end-0" href="./actuels.html"
+              <a
+                class="navbartabpadding nav-link border border-end-0"
+                href="actuels.html"
                 >Actuels</a
               >
-              <a class="navbartabpadding nav-link border border-end-0" href="./produits.html"
+              <a
+                class="navbartabpadding nav-link border border-end-0"
+                href="produits.html"
                 >Produits</a
               >
-              <a class="navbartabpadding nav-link border border-end-0" href="./contacts.html"
+              <a
+                class="navbartabpadding nav-link border border-end-0"
+                href="contacts.html"
                 >Contacts</a
               >
               <a
                 id="livraisontab"
                 class="navbartabpadding nav-link border border-end-0"
-                href="#"
+                href="livraison.html"
                 >Livraison</a
               >
               <a class="navbariconpadding nav-link border border-end-0" href="#"
@@ -77,74 +86,112 @@
       <div class="headerbackground"></div>
       <div class="container-fluid p-0" id="contactform">
         <h2>Nous écrire</h2>
-        <form id="form" >
+        <form id="form">
           <div class="mb-3">
             <label for="contactname" class="col-form-label">Votre nom:</label>
-            <input type="text" class="form-control" id="contactname" placeholder="Nom"/>
+            <input
+              type="text"
+              class="form-control"
+              id="contactname"
+              placeholder="Nom"
+            />
           </div>
           <div class="mb-3">
-            <label for="contactmail" class="col-form-label">Adresse mail:</label>
-            <input type="text" class="form-control" id="contactmail" placeholder="adresse@mail.com"/>
+            <label for="contactmail" class="col-form-label"
+              >Adresse mail:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="contactmail"
+              placeholder="adresse@mail.com"
+            />
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Votre message:</label>
-            <textarea class="form-control" id="message-text" placeholder="Tapez ici..."></textarea>
+            <label for="message-text" class="col-form-label"
+              >Votre message:</label
+            >
+            <textarea
+              class="form-control"
+              id="message-text"
+              placeholder="Tapez ici..."
+            ></textarea>
           </div>
           <!-- Button trigger modal -->
-<button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Envoyer
-</button>
+          <button
+            type="button"
+            class="btn text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Envoyer
+          </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Votre message a bien été envoyé !
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-      </div>
-    </div>
-  </div>
-</div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">Votre message a bien été envoyé !</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
-        <div id="cont">
-          <h3>Contacts</h3>
-          <p>01 39 59 66 33<br>
+        <div class="contactinfowrapper">
+          <div id="cont">
+            <h2>Contacts</h2>
+            <p>
+              01 39 59 66 33<br />
               contact@fete-bouquet.com
-          </p>
-          <div class="icons"><i class="fab fa-instagram"></i>
+            </p>
+            <div class="icons">
+              <i class="fab fa-instagram"></i>
               <i class="fab fa-pinterest-p"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-facebook-f"></i>
+            </div>
           </div>
-      </div>
-      <div id="adress_horaires">
-          <h3>Adresse et horaires</h3>
-          <p>4 allée de Vilvert<br>
-              78960 Jouy-en-Josas<br>
-              Lundi-Vendredi 8h-19h</p>
-      </div>
+          <div id="adress_horaires">
+            <h2>Adresse et horaires</h2>
+            <p>
+              4 allée de Vilvert<br />
+              78960 Jouy-en-Josas<br />
+              Lundi-Vendredi 8h-19h
+            </p>
+          </div>
+        </div>
         <footer>
-          <div class="cont_footer">
-      
           <div class="mt-5 bottom">
-              <div id="ment_leg">
-                  <p>Mentions légales
-                      Crédits
-                      Livraison
-                      Politique&nbspde&nbspconfidentialité&nbspet&nbspRPGC</p>
-              </div>
-      
+            <div id="ment_leg">
+              <p>
+                Mentions légales Crédits Livraison Politique de confidentialité
+              </p>
+            </div>
           </div>
           <p id="copyright">Copyright (c) 2021 Ménarius</p>
-      </footer>
+        </footer>
       </div>
-  
     </div>
 
     <script
@@ -157,7 +204,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-    <script src="contacts.js"></script>
   </body>
 </html>
