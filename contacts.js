@@ -1,6 +1,5 @@
 let burger = document.getElementById("burger")
-let clicked = false;
-
+let clicked = false
 
 burger.addEventListener("click", function(e){
     if (clicked === false) {
@@ -12,3 +11,4 @@ burger.addEventListener("click", function(e){
     clicked = false;
    }
 })
+

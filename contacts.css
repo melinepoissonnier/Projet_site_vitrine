@@ -98,12 +98,17 @@
     #form {
         width: 50%;
         margin: auto;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .btn {
         background-color: #6d071a;
         border: none;
+        margin: auto;
+        display: block;
+        width: 40%;
     }
+
     
     @media screen and (max-width: 992px) {
         .navbariconpadding {
