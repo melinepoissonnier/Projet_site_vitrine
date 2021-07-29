@@ -18,12 +18,38 @@ body {
   box-shadow: none;
 }
 
+/* FOOTER */
+
+.cont_footer,
+.bottom > div {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  height: 15%;
+  margin: 1%;
+}
+
+#copyright {
+  text-align: center;
+  font-size: x-small;
+  background-color: #e8d6ca;
+  padding-top: 0.5%;
+}
+
+#ment_leg {
+  font-family: "Quicksand", sans-serif;
+  font-size: small;
+}
 /*MEDIA QUERY TABLETTE*/
-@media screen and (min-width: 650px) and (max-width: 900px) {
-  .tablet {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
+@media screen and (min-width: 650px) and (max-width: 1100px) {
+  .container {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    margin-top: 37%;
   }
 }

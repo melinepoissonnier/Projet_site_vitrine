@@ -22,21 +22,80 @@
     />
 
     <link rel="stylesheet" href="actuels.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css">
     <title>Articl</title>
   </head>
   <body>
+    <!-- ---------------------------------------------- navBar -->
+
+    <div class="container-fluid p-0" >
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid p-0">
+          <button
+            id="burger"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="responsiveicons">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify-content-between">
+              <img id="logobar" src="images/Logo.png" alt="" />
+              <a class="navbartabpadding nav-link border border-end-0" href="#"
+                >Accueil</a
+              >
+              <a class="navbartabpadding nav-link border border-end-0" href="#"
+                >Actuels</a
+              >
+              <a class="navbartabpadding nav-link border border-end-0" href="#"
+                >Produits</a
+              >
+              <a class="navbartabpadding nav-link border border-end-0" href="#"
+                >Contacts</a
+              >
+              <a
+                id="livraisontab"
+                class="navbartabpadding nav-link border border-end-0"
+                href="#"
+                >Livraison</a
+              >
+              <a class="navbariconpadding nav-link border border-end-0" href="#"
+                ><i class="fas fa-user"></i
+              ></a>
+              <a class="navbariconpadding nav-link border" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <div class="headerbackground"></div>
+    
+    <!-- ---------------------------------------------- fin navBar -->
+
     <!-- container page article -->
-    <div class="container">
+    <div class="container" >
       <!-- ligne page -->
-      <div class="row">
+      <div class="row mt-lg-3 ms-sm-3 ms-3 ">
         <!-- ------------------------------------------article 1 et 2 -->
         <!-- Lign article 1 et 2 -->
         <div class="row">
           <!-- col article 1 -->
-          <div class="col-lg-6 col-md-12 tablet bg-primary col-12">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12 bg-primary ">
             <!-- cart1 -->
-            <div class="card col-lg-11 ms-lg-5 articl m-2 col-md-12">
+            <div class="card col-lg-11 col-md-12 col-sm-12 col-12 m-lg-2 ms-lg-5 mt-md-5 articl">
               <img
                 src="./images/orchidee_dior1.jpg"
                 class="card-img-top"
@@ -61,9 +120,9 @@
           <!-- fin colon articl 1 -->
 
           <!-- col article 2 -->
-          <div class="col-lg-6 col-md-12 bg-secondary">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12 bg-secondary">
             <!-- cart2 -->
-            <div class="card col-lg-11 articl m-lg-2 ms-lg-2 col-md-12">
+            <div class="card col-lg-11 col-md-12 col-sm-12 col-12 m-lg-2 mt-lg-2 mt-md-5 mt-sm-4 mt-4 ms-lg-2  articl">
               <img
                 src="./images/slow_flower.jpg"
                 class="card-img-top"
@@ -90,9 +149,9 @@
         <!-- lign articl 3 et 4 -->
         <div class="row">
           <!-- col article 3 -->
-          <div class="col-lg-6 col-md-12 bg-success">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12 bg-success">
             <!-- cart3 -->
-            <div class="card col-lg-11 ms-lg-5 articl m-2 col-md-12">
+            <div class="card col-lg-11 col-md-12 col-sm-12 col-12 m-lg-2 ms-lg-5  mt-md-5 mt-sm-4 mt-4 articl">
               <img
                 src="./images/hortensia_bretagne.jpg"
                 class="card-img-top"
@@ -117,9 +176,9 @@
           </div>
           <!-- fin colon articl 3 -->
           <!-- col article 4 -->
-          <div class="col-lg-6 col-md-12 bg-danger">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12 bg-danger">
             <!-- cart 4 -->
-            <div class="card col-lg-11 articl m-2 mt-lg-5 col-md-12">
+            <div class="card col-lg-11 col-md-12 col-sm-12 col-12 m-lg-2 mt-lg-5 mt-md-5 mt-sm-4 mt-4 articl">
               <img
                 src="./images/art_floral.jpg"
                 class="card-img-top"
@@ -147,84 +206,30 @@
       </div>
       <!-- fin row -->
     </div>
+   
     <!-- fin container de page -->
-
     <footer>
       <div class="cont_footer">
-        <img src="images/Logo.png" alt="Fête ton bouquet!" />
-        <div class="nous_ecrire">
-          <fieldset>
-            <legend>
-              <h2>Nous écrire</h2>
-            </legend>
-            <div>
-              <label>Votre nom<br /></label>
-              <input type="text" name="Name" placeholder="Nom" />
-            </div>
-            <div>
-              <label>Adresse mail*<br /></label>
-              <input type="text" placeholder="adresse@mail.com" />
-            </div>
-            <div>
-              <label>Votre message*<br /></label>
-              <textarea
-                name="text"
-                placeholder="Tapez ici..."
-                cols="39"
-                rows="10"
-                required
-              ></textarea>
-            </div>
-            <input type="button" value="Envoyer" />
-          </fieldset>
-        </div>
-        <div id="newsletter">
-          <h3>Inscrivez-vous à notre newsletter</h3>
-          <label>Adresse mail*<br /></label>
-          <input type="text" placeholder="adresse@mail.com" required />
-        </div>
-        <div id="cont">
-          <h3>Contacts</h3>
-          <p>
-            01 39 59 66 33<br />
-            contact@fete-bouquet.com
-          </p>
-          <div class="icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest-p"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook-f"></i>
+  
+      <div class="mt-5 bottom">
+          <div id="ment_leg">
+              <p>Mentions légales
+                  Crédits
+                  Livraison
+                  Politique&nbspde&nbspconfidentialité&nbspet&nbspRPGC</p>
           </div>
-        </div>
-        <div id="adress_horaires">
-          <h3>Adresse et horaires</h3>
-          <p>
-            4 allée de Vilvert<br />
-            78960 Jouy-en-Josas<br />
-            Lundi-Vendredi 8h-19h
-          </p>
-        </div>
-      </div>
-      <div class="bottom">
-        <div id="ment_leg">
-          <p>
-            Mentions légales Crédits Livraison
-            Politique&nbspde&nbspconfidentialité&nbspet&nbspRPGC
-          </p>
-        </div>
-        <div id="paiement">
-          Paiement
-          <div class="cards">
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-cc-paypal"></i>
-            <i class="fab fa-cc-amex"></i>
-          </div>
-        </div>
+  
       </div>
       <p id="copyright">Copyright (c) 2021 Ménarius</p>
     </footer>
+     <!-- pag actuel js -->
     <script src="actuels.js"></script>
+    <!-- font nav -->
+    <script
+    src="https://kit.fontawesome.com/39fa235958.js"
+    crossorigin="anonymous"
+    ></script>
+     <!-- bootstrap lien -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
