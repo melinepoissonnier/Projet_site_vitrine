@@ -10,36 +10,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="actuels.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Articl</title>
   </head>
   <body>
     <!-- container page article -->
-    <div class="container bg-primary">
+    <div class="container">
       <!-- ligne page -->
-      <div class="row bg-secondary">
+      <div class="row">
         <!-- ------------------------------------------article 1 et 2 -->
         <!-- Lign article 1 et 2 -->
-        <div class="row bg-success">
+        <div class="row">
           <!-- col article 1 -->
-          <div class="col-lg-6 bg-danger col-6">
+          <div class="col-lg-6 col-md-12 tablet bg-primary col-12">
             <!-- cart1 -->
-            <div class="card articl m-2 col" style="width: 30rem">
+            <div class="card col-lg-11 ms-lg-5 articl m-2 col-md-12">
               <img
-                src="./images/orchidee_dior.jpg"
+                src="./images/orchidee_dior1.jpg"
                 class="card-img-top"
                 alt="images"
+                id="img1"
               />
               <div class="card-body mt-lg-4">
-                <h5 class="card-title">Dior sur fond d'orchidées blanches.</h5>
+                <h5 class="card-title fs-3">
+                  Dior sur fond d'orchidées blanches.
+                </h5>
                 <p class="card-text">
                   Robes et combinaisons pâles ont été présentées sur fond de
                   murs recouverts d'orchidées lors du défilé haute couture de la
                   maison Dior à Paris.
                 </p>
 
-                <a href="#" class="text-decoration-none">Go somewhere</a>
+                <a href="#" class="text-decoration-none">En savoir plus</a>
               </div>
             </div>
             <!-- fin cart1 -->
@@ -47,19 +61,17 @@
           <!-- fin colon articl 1 -->
 
           <!-- col article 2 -->
-          <div class="col-lg-6 bg-warning">
+          <div class="col-lg-6 col-md-12 bg-secondary">
             <!-- cart2 -->
-            <div
-              class="card articl m-2 ms-5 col"
-              style="width: 30rem; height: 100%"
-            >
+            <div class="card col-lg-11 articl m-lg-2 ms-lg-2 col-md-12">
               <img
-                src="./images/anniversaire.jpg"
+                src="./images/slow_flower.jpg"
                 class="card-img-top"
                 alt="images"
+                id="img2"
               />
               <div class="card-body mt-lg-5">
-                <h5 class="card-title">
+                <h5 class="card-title fs-3">
                   A la Saint Valentin, dites-le en mode "Slow Flower".
                 </h5>
                 <p class="card-text">
@@ -67,7 +79,7 @@
                   deux ans un réseau national de fleuristes et de d’horticulteur
                   « made in France » dans la mouvance slow flower.
                 </p>
-                <a href="#" class="text-decoration-none">Go somewhere</a>
+                <a href="#" class="text-decoration-none">En savoir plus</a>
               </div>
             </div>
             <!-- fin cart2 -->
@@ -78,17 +90,17 @@
         <!-- lign articl 3 et 4 -->
         <div class="row">
           <!-- col article 3 -->
-          <div class="col-lg-6 bg-danger">
+          <div class="col-lg-6 col-md-12 bg-success">
             <!-- cart3 -->
-            <div class="card articl m-2 col" style="width: 30rem; height: 95%">
+            <div class="card col-lg-11 ms-lg-5 articl m-2 col-md-12">
               <img
                 src="./images/hortensia_bretagne.jpg"
                 class="card-img-top"
-                style="width: 30rem"
                 alt="images"
+                id="img3"
               />
               <div class="card-body mt-lg-5">
-                <h5 class="card-title">
+                <h5 class="card-title fs-3">
                   L'hortensia, La fleur de l'été en Bretagne.
                 </h5>
                 <p class="card-text">
@@ -98,27 +110,24 @@
                   évoquent bien souvent des souvenirs d'enfance, à chacun son
                   anecdote sur l'hortensia.
                 </p>
-                <a href="#" class="text-decoration-none">Go somewhere</a>
+                <a href="#" class="text-decoration-none">En savoir plus</a>
               </div>
             </div>
             <!-- fin cart3 -->
           </div>
           <!-- fin colon articl 3 -->
           <!-- col article 4 -->
-          <div class="col-lg-6 bg-warning">
+          <div class="col-lg-6 col-md-12 bg-danger">
             <!-- cart 4 -->
-            <div
-              class="card articl m-2 ms-5 mt-lg-5 col"
-              style="width: 30rem; height: 80%"
-            >
+            <div class="card col-lg-11 articl m-2 mt-lg-5 col-md-12">
               <img
                 src="./images/art_floral.jpg"
                 class="card-img-top"
-                style="width: 30rem; height: 50%"
                 alt="images"
+                id="img4"
               />
               <div class="card-body mt-lg-5">
-                <h5 class="card-title">
+                <h5 class="card-title fs-3">
                   Art floral, dites-le avec des fleurs séchées.
                 </h5>
                 <p class="card-text">
@@ -127,7 +136,7 @@
                   esthétique instagrammable et la prime accordée à tout ce qui
                   sonne comme durable et naturel.
                 </p>
-                <a href="#" class="text-decoration-none">Go somewhere</a>
+                <a href="#" class="text-decoration-none">En savoir plus</a>
               </div>
             </div>
             <!-- fin cart 4 -->
@@ -215,6 +224,7 @@
       </div>
       <p id="copyright">Copyright (c) 2021 Ménarius</p>
     </footer>
+    <script src="actuels.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
