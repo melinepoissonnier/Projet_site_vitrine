@@ -5,19 +5,6 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-.articl {
-  -webkit-box-shadow: 2px 3px 20px -2px #000000;
-  box-shadow: 2px 3px 20px -2px #000000;
-  transition: 0.3s ease-in-out;
-}
-
-.articl:hover {
-  -ms-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  box-shadow: none;
-}
-
 /* FOOTER */
 
 .cont_footer,
@@ -40,6 +27,9 @@ body {
 #ment_leg {
   font-family: "Quicksand", sans-serif;
   font-size: small;
+}
+.card-text {
+  text-align: justify;
 }
 /*MEDIA QUERY TABLETTE*/
 @media screen and (min-width: 650px) and (max-width: 1100px) {
