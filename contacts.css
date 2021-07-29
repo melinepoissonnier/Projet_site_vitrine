@@ -94,6 +94,27 @@
     #burger {
         background: #f1efe7;
     }
+
+    #form {
+        width: 50%;
+        margin: auto;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .btn {
+        background-color: #6d071a;
+        border: none;
+        margin: auto;
+        display: block;
+        width: 40%;
+    }
+
+h2 {
+    color: #6d071a;
+    font-family: "Dancing script", Verdana, Geneva, Arial;
+    text-align: center;
+    margin-top: 1em;
+}
     
     @media screen and (max-width: 992px) {
         .navbariconpadding {
@@ -121,9 +142,17 @@
         .headerbackground {
             display: block;
         }
+    
+        #form {
+            width: auto;
+            margin: 0 2em;
+        }
         #contactform {
-            position: fixed;
-            top: 250px;
+            margin-top: 200px;
+            transition: transform 350ms;
+        }
+        .navbar-nav {
+            position: absolute;
         }
     }
     

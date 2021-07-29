@@ -75,8 +75,9 @@
         </div>
       </nav>
       <div class="headerbackground"></div>
-      <div class="container" id="contactform">
-        <form >
+      <div class="container-fluid p-0" id="contactform">
+        <h2>Nous écrire</h2>
+        <form id="form" >
           <div class="mb-3">
             <label for="contactname" class="col-form-label">Votre nom:</label>
             <input type="text" class="form-control" id="contactname" placeholder="Nom"/>
@@ -89,8 +90,45 @@
             <label for="message-text" class="col-form-label">Votre message:</label>
             <textarea class="form-control" id="message-text" placeholder="Tapez ici..."></textarea>
           </div>
-          <input class="btn btn-primary" type="button" value="Envoyer">
+          <!-- Button trigger modal -->
+<button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Envoyer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Votre message a bien été envoyé !
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
         </form>
+        <div id="cont">
+          <h3>Contacts</h3>
+          <p>01 39 59 66 33<br>
+              contact@fete-bouquet.com
+          </p>
+          <div class="icons"><i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+          </div>
+      </div>
+      <div id="adress_horaires">
+          <h3>Adresse et horaires</h3>
+          <p>4 allée de Vilvert<br>
+              78960 Jouy-en-Josas<br>
+              Lundi-Vendredi 8h-19h</p>
+      </div>
         <footer>
           <div class="cont_footer">
       
@@ -119,5 +157,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="contacts.js"></script>
   </body>
 </html>
