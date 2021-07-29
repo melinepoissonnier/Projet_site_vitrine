@@ -94,6 +94,16 @@
     #burger {
         background: #f1efe7;
     }
+
+    #form {
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn {
+        background-color: #6d071a;
+        border: none;
+    }
     
     @media screen and (max-width: 992px) {
         .navbariconpadding {
@@ -121,9 +131,14 @@
         .headerbackground {
             display: block;
         }
+    
+        #form {
+            width: auto;
+            margin: 0 2em;
+        }
         #contactform {
-            position: fixed;
-            top: 250px;
+            margin-top: 250px;
+            transition: transform 350ms;
         }
     }
     
