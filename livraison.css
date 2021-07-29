@@ -7,8 +7,12 @@ body {
 #row_livraison {
 
     justify-content: center;
+    background-color: #F9EFE8;
+    border-radius : 5px;
+    width: 80%;
 
 }
+
 
 #picto_livraison {
     font-family: 'Dancing Script', cursive;
@@ -21,6 +25,10 @@ body {
     width:8rem;
     margin-bottom: 0.5rem;
 }
+
+
+/* FOOTER */
+
 
 .cont_footer,
     .bottom>div {
@@ -47,5 +55,16 @@ body {
         font-family: 'Quicksand', sans-serif;
         font-size: small;
 
+    }
+
+
+    @media screen and (max-width: 992px) {
+
+        .livraison_div {
+top: 250px;
+margin :auto;
+width:90%;
+        }
 
     }
+

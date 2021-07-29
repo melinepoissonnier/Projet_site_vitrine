@@ -11,22 +11,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Livraison Fête ton bouquet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="livraison.css">
 
 
 </head>
 
-<body></body>
+<body>
 
-<div class="container mt-5" id="row_livraison ">
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid p-0">
+              <button
+                id="burger"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="responsiveicons">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+    
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-between">
+                  <img id="logobar" src="images/Logo.png" alt="" />
+                  <a class="navbartabpadding nav-link border border-end-0" href="#"
+                    >Accueil</a
+                  >
+                  <a class="navbartabpadding nav-link border border-end-0" href="#"
+                    >Actuels</a
+                  >
+                  <a class="navbartabpadding nav-link border border-end-0" href="#"
+                    >Produits</a
+                  >
+                  <a class="navbartabpadding nav-link border border-end-0" href="#"
+                    >Contacts</a
+                  >
+                  <a
+                    id="livraisontab"
+                    class="navbartabpadding nav-link border border-end-0"
+                    href="#"
+                    >Livraison</a
+                  >
+                  <a class="navbariconpadding nav-link border border-end-0" href="#"
+                    ><i class="fas fa-user"></i
+                  ></a>
+                  <a class="navbariconpadding nav-link border" href="#"
+                    ><i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+
+          <div class="headerbackground"></div>
+
+
+
+    </header>
+
+
+<div class="livraison_div">
+    
+<div class="container mt-5" id="row_livraison">
     <div class="justify-content-md-center row row-cols-1 row-cols-sm-2 row-cols-md-4">
-      <div class="p-4 m-2 fs-3 lh-1 col" id="picto_livraison"><img id="img_livraison" src="images/picto_paris.svg"><br>- Paris - <br>- Grande Couronne -</div>
-      <div class="p-4 m-2 fs-3 col" id="picto_livraison"><img id="img_livraison" src="images/picto_2H.svg"><br>Express</div>
-      <div class="p-4 m-2 fs-3 col" id="picto_livraison"><img id="img_livraison" src="images/picto_77.svg"><br>Tous les jours</div>
+      <div class="p-4 m-2 fs-4 lh-1 col" id="picto_livraison"><img id="img_livraison" src="images/picto_paris.svg" alt="pictogramme Tour Eiffel flower frame"><br>- Paris - <br>- Grande Couronne -</div>
+      <div class="p-4 m-2 fs-4 col" id="picto_livraison"><img id="img_livraison" src="images/picto_2H.svg" alt="pictogramme 2H flower frame"><br>Express</div>
+      <div class="p-4 m-2 fs-4 col" id="picto_livraison"><img id="img_livraison" src="images/picto_77.svg" alt="pictogramme 7/7 flower frame"><br>Tous les jours</div>
 
     </div>
   </div>
 
+
+  <!-- FOOTER -->
   <footer>
     <div class="cont_footer">
         
@@ -42,7 +111,12 @@
     <p id="copyright">Copyright (c) 2021 Ménarius</p>
 </footer>
 
+</div>
 
+<script
+src="https://kit.fontawesome.com/39fa235958.js"
+crossorigin="anonymous"
+></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
