@@ -109,7 +109,12 @@
         width: 40%;
     }
 
-
+h2 {
+    color: #6d071a;
+    font-family: "Dancing script", Verdana, Geneva, Arial;
+    text-align: center;
+    margin-top: 1em;
+}
     
     @media screen and (max-width: 992px) {
         .navbariconpadding {
@@ -143,7 +148,7 @@
             margin: 0 2em;
         }
         #contactform {
-            margin-top: 250px;
+            margin-top: 200px;
             transition: transform 350ms;
         }
         .navbar-nav {
