@@ -1,78 +1,88 @@
 /*Couleur arrière plan */
 body {
-    background: #E8D6CA;
-    margin: auto;
+  background: #e8d6ca;
+  margin: auto;
 }
 
 #row_livraison {
-
-    justify-content: center;
-    background-color: #F9EFE8;
-    border-radius : 5px;
-    width: 80%;
-
+  justify-content: center;
+  background-color: #f9efe8;
+  border-radius: 5px;
+  width: 80%;
 }
 
-
-#picto_livraison {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    color: #6d071a;
-    text-align: center;
+#picto_livraison1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #6d071a;
+  text-align: center;
 }
 
-#img_livraison {
-    width:8rem;
-    margin-bottom: 0.5rem;
+#img_livraison1 {
+  width: 8rem;
+  margin-bottom: 0.5rem;
 }
 
+#picto_livraison2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #6d071a;
+  text-align: center;
+}
+
+#img_livraison2 {
+  width: 8rem;
+  margin-bottom: 0.5rem;
+}
+
+#picto_livraison3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #6d071a;
+  text-align: center;
+}
+
+#img_livraison3 {
+  width: 8rem;
+  margin-bottom: 0.5rem;
+}
 
 /* FOOTER */
 
-
 .cont_footer,
-    .bottom>div {
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        text-align: center;
-        height: 15%;
-        margin: 1%;
-    }
+.bottom > div {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  height: 15%;
+  margin: 1%;
+}
 
-    
+#copyright {
+  text-align: center;
+  font-size: x-small;
+  background-color: #e8d6ca;
+  padding-top: 0.5%;
+}
 
+#ment_leg {
+  font-family: "Quicksand", sans-serif;
+  font-size: small;
+}
 
-    #copyright {
-        text-align: center;
-        font-size: x-small;
-        background-color: #E8D6CA;
-        padding-top: 0.5%;
-    }
+@media screen and (max-width: 992px) {
+  .livraison_div {
+    top: 250px;
+    margin: auto;
+    width: 90%;
+  }
+}
 
-    #ment_leg {
-
-        font-family: 'Quicksand', sans-serif;
-        font-size: small;
-
-    }
-
-
-    @media screen and (max-width: 992px) {
-
-        .livraison_div {
-top: 250px;
-margin :auto;
-width:90%;
-        }
-
-    }
-
-    #btn-back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: none;
-        background-color: #ffffff;
-      }
-    
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #ffffff;
+}
